@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/llmain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -18,14 +18,7 @@
         android:hint="@string/hint_weight"
         />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/etHeightInEnch"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="@string/hint_height_Inch"
-        />
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -34,6 +27,15 @@
         android:ems="10"
         android:inputType="number"
         android:hint="@string/hint_height_feet"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etHeightInEnch"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/hint_height_Inch"
         />
 
     <Button
@@ -51,6 +53,7 @@
         android:textSize="25dp"
         android:layout_marginTop="20sp"
         android:textStyle="bold"
+        android:id="@+id/tvResult"
         />
 
 </LinearLayout>
